@@ -2,7 +2,7 @@
 <html lang="en">
   {% block body %}
   <form action="{% url 'search_result' %}" method="get">
-    <input name="q" type="text" placeholder="Search Mentor">
+    <input name="q" type="text" placeholder="Search Mentor, City or Email">
   </form>
   {{message}}<br>
   {% for user in user_result %}
